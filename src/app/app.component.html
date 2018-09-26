@@ -1,0 +1,183 @@
+<div class="container-fluid">
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Action 1</a>
+          <a class="dropdown-item" href="#">Action 2</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<nav class="breadcrumb">
+    <a class="breadcrumb-item" href="home">home</a>
+    <a class="breadcrumb-item" href="test">test</a>
+    <span class="breadcrumb-item active"></span>
+  </nav>
+  
+
+
+  <div class="jumbotron">
+    <h1 class="display-3">Jumbo heading</h1>
+    <p class="lead">Jumbo helper text</p>
+    <hr class="my-2">
+    <p>More info</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+    </p>
+  </div>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>alert</strong> 
+</div>
+
+
+<div class="progress">
+    <div class="progress-bar bg-primary|secondary|success|danger|warning|info|light|dark" role="progressbar" style="width: 25%;"
+        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Description</div>
+</div>
+<div class="progress" data-toggle="tooltip" data-placement="top|right|bottom|left" title="efwef">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary|secondary|success|danger|warning|info|light|dark" role="progressbar"
+        style="width: 25%;" aria-valuenow="25" aria-valuemin="0"    aria-valuemax="1000">proccessing ... 10%</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+  <div class="form-group">
+    <label for="">Test</label>
+    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="helpId" class="text-muted">Help text</small>
+  </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+        <label for="">Test 2</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+        <small id="helpId" class="text-muted">Help text</small>
+      </div>  
+</div>
+
+
+
+
+
+
+<!--Contianer End-->
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input name="" id="" class="btn btn-primary" (click)="showSuccess('test')" type="button" value="Click ME">  
+  </div>
+  </div>
+  
+  
+  
+  <div class="row">
+    <div class="col-md-12">
+      <table datatable [dtOptions]="dtOptions" class="row-border hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+     
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Foo</td>
+            <td>Bar</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Someone</td>
+            <td>Youknow</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Iamout</td>
+            <td>Ofinspiration</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Yoda</td>
+            <td>Skywalker</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Patrick</td>
+            <td>Dupont</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Barack</td>
+            <td>Obama</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>François</td>
+            <td>Holland</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Michel</td>
+            <td>Popo</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Chuck</td>
+            <td>Norris</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Simon</td>
+            <td>Robin</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Louis</td>
+            <td>Lin</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Zelda</td>
+            <td>Link</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    </div>
+  
+
+
+<script>
+  $(".alert").alert();
+</script>
+</div>
