@@ -1,5 +1,5 @@
 import { Component,OnInit  } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,9 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  dtOptions: DataTables.Settings = {};
   ngOnInit(): void {
-    this.dtOptions = {
-      pagingType: 'full_numbers'
-    };
+  //alert("hello");
   }
-  constructor(private toastr: ToastrService) {}
-  showSuccess(param) {
-    this.toastr.info(param, 'Toastr fun!');
-  }
+  constructor() {}
+  
 }
